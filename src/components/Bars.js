@@ -12,14 +12,14 @@ return (
         <Grid.Row>
         <Grid.Column>
             <Card>
-                <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+                <Image tiny src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/df/90/92/zilker-brewering-company.jpg?w=1200&h=-1&s=1' wrapped ui={false} />
                 <Card.Content>
-                <Card.Header>Matthew</Card.Header>
+                <Card.Header>Zilker Brewing</Card.Header>
                 <Card.Meta>
                     <span className='date'>Joined in 2015</span>
                 </Card.Meta>
                 <Card.Description>
-                    Matthew is a musician living in Nashville.
+                Monday-Thursday: 11am - 10pm; Friday-Saturday: 11am - 11pm; Sunday: 11am - 8pm
                 </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
