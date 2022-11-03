@@ -5,7 +5,15 @@ function NavBar() {
     return (
         <div className="navbar">
             <ul>
-            <li>
+            <li>    
+            <NavLink 
+                to="/"
+                exact
+            >
+                Home
+            </NavLink>
+            </li>
+            <li>    
             <NavLink 
                 to="/bars"
                 exact
