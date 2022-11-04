@@ -18,6 +18,12 @@ function App() {
     .then((bars) => setBars(bars))
    }, []) 
 
+   useEffect(() => {
+    fetch("http://localhost:3000/breweries")
+    .then((r) => r.json())
+    .then((breweries) => setBreweries(breweries))
+   }, []) 
+
 return (
     <div>
         <NavBar />
@@ -26,7 +32,7 @@ return (
                 <Bars bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">
-                <Breweries />
+                <Breweries breweries={breweries} setBreweries={setBreweries}/>
             </Route>
             <Route exact path="/submitform">
                 <SubmitForm />
