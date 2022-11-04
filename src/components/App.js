@@ -5,7 +5,7 @@ import Breweries from "./Breweries"
 import NavBar from "./NavBar"
 import SubmitForm from "./SubmitForm"
 import Home from "./Home"
-
+import { Divider, Segment } from 'semantic-ui-react'
 
 
 function App() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Segment, Header, Grid, Image, Card, Icon } from 'semantic-ui-react'
+import {Container, Segment, Header, Grid, Image, Card, Icon } from 'semantic-ui-react'
 
 
 function Bars() {
