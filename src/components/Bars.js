@@ -1,37 +1,42 @@
 import React from 'react'
-import {Container, Segment, Header, Grid, Image, Card, Icon } from 'semantic-ui-react'
+import {Container, Segment, Header, Grid, Image, Card, Button, Icon } from 'semantic-ui-react'
 
 
-function Bars() {
+function Bars({ key, id, name, image, website, hours}) {
 return (
 <>
     <Segment inverted padded="very">
         <Header textAlign="center" as="h1">Bars</Header>
     </Segment>
+    <Container>
     <Grid columns={3} divided>
         <Grid.Row>
         <Grid.Column>
-            <Card>
-                <Image tiny src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/df/90/92/zilker-brewering-company.jpg?w=1200&h=-1&s=1' wrapped ui={false} />
+            <Card color="black">
+                <Image tiny src={image} wrapped ui={false} />
                 <Card.Content>
-                <Card.Header>Zilker Brewing</Card.Header>
+                <Card.Header as="h1">{name}</Card.Header>
                 <Card.Meta>
-                    <span className='date'>Joined in 2015</span>
+                    <Button color="yellow" size="tiny">Happy Hour</Button>
                 </Card.Meta>
                 <Card.Description>
-                Monday-Thursday: 11am - 10pm; Friday-Saturday: 11am - 11pm; Sunday: 11am - 8pm
+                Hours: {hours}
                 </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
                 <a>
-                    <Icon name='user' />
-                    22 Friends
+                    <Button size="Medium" color="green">Open</Button> 
+                    <Button size="Medium">Edit</Button>
+                    <Button size="Medium">
+                        <Icon name="trash" />
+                    </Button>
                 </a>
                 </Card.Content>
             </Card>
         </Grid.Column>
         </Grid.Row>
     </Grid>
+    </Container>
 </>
 )
 }
