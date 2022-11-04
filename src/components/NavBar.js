@@ -28,7 +28,7 @@ function NavBar() {
                 to="/submitform"
                 exact
             >
-                SubmitForm
+                Add New
             </Button>
         </div>
     )
