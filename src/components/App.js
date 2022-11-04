@@ -23,9 +23,7 @@ return (
         <NavBar />
         <Switch>
             <Route exact path="/bars">
-            {bars.map((bar) => (
-                 <Bars key={bar.id} id={bar.id} name={bar.name} image={bar.image} hours={bar.hours} website={bar.website} />   
-                ))}
+                <Bars bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">
                 <Breweries />

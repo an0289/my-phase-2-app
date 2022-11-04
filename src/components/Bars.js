@@ -1,8 +1,9 @@
 import React from 'react'
 import {Container, Segment, Header, Grid, Image, Card, Button, Icon } from 'semantic-ui-react'
+import BarCard from "./BarCard"
 
 
-function Bars({ key, id, name, image, website, hours}) {
+function Bars({ bars, setBars}) {
 return (
 <>
     <Segment inverted padded="very">
@@ -12,27 +13,9 @@ return (
     <Grid columns={3} divided>
         <Grid.Row>
         <Grid.Column>
-            <Card color="black">
-                <Image tiny src={image} wrapped ui={false} />
-                <Card.Content>
-                <Card.Header as="h1">{name}</Card.Header>
-                <Card.Meta>
-                    <Button color="yellow" size="tiny">Happy Hour</Button>
-                </Card.Meta>
-                <Card.Description>
-                Hours: {hours}
-                </Card.Description>
-                </Card.Content>
-                <Card.Content extra>
-                <a>
-                    <Button size="Medium" color="green">Open</Button> 
-                    <Button size="Medium">Edit</Button>
-                    <Button size="Medium">
-                        <Icon name="trash" />
-                    </Button>
-                </a>
-                </Card.Content>
-            </Card>
+            {bars.map((bar) => (
+             <BarCard key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
+            ))}
         </Grid.Column>
         </Grid.Row>
     </Grid>
