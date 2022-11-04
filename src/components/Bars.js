@@ -11,7 +11,7 @@ return (
     </Segment>
     <Container>
     <Grid columns={3} divided>
-        <Grid.Row stretched>
+        <Grid.Row  >
             {bars.map((bar) => (
              <BarCard key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
             ))}

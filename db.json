@@ -6,7 +6,7 @@
         "image": "https://media-cdn.tripadvisor.com/media/photo-s/21/5b/c9/fa/wow.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Sunday: 11am - 12am",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "http://www.workhorsebar.com/"
       },
       {
@@ -15,7 +15,7 @@
         "image": "https://resizer.otstatic.com/v2/photos/xlarge/3/31846328.jpg",
         "dog-friendly": false,
         "patio": true,
-        "hours": "Monday-Thursday: 4pm - 12am; Friday-Saturday: 12pm - 12am; Sunday: 12pm - 10pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.zanzibaratx.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MTgwOTg5NDgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
       },
       {
@@ -24,7 +24,7 @@
         "image": "https://resizer.otstatic.com/v2/photos/xlarge/1/40964762.jpg",
         "dog-friendly": false,
         "patio": true,
-        "hours": "Monday-Sunday: 7am - 11pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.corinneatx.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjA1Nzc1NTMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
       },
       {
@@ -33,7 +33,7 @@
         "image": "https://media-cdn.tripadvisor.com/media/photo-p/19/f4/85/70/entrance-to-hank-s.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Thursday, Sunday: 8am - 9pm; Friday-Saturday: 8am - 10pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.hanksaustin.com/"
       },
       {
@@ -42,7 +42,7 @@
         "image": "https://cdn.vox-cdn.com/thumbor/6CsKdbL_ace9WhwIRSLWrRCtAJ0=/0x0:3745x5617/1200x0/filters:focal(0x0:3745x5617):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22885459/0C2A8528.jpg",
         "dog-friendly": false,
         "patio": false,
-        "hours": "Monday-Wednesday: 4pm - 12am; Thursday-Friday: 4pm - 2am; Saturday: 1pm - 2am; Sunday: 1pm - 10pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.tiki-tatsuya.com/"
       },
       {
@@ -51,7 +51,7 @@
         "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/Courtesy-of-Lala-s-Little-Nugget-2--8af88886f622886_8af88972-c5cf-a064-8f26e53369bbaa45.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Sunday: 4pm - 2am",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.lalasaustintexas.com/"
       },
       {
@@ -60,7 +60,7 @@
         "image": "https://6street.com/wp-content/uploads/2015/05/shangri-la-header-1024x683.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Thursday: 4pm - 2am; Friday-Sunday: 2pm - 2am",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://shangrilaaustin.com/"
       },
       {
@@ -69,7 +69,7 @@
         "image": "https://cdn.stayhappening.com/events5/banners/963e35c8420900f2c9aea1db6dd9fd1f7c169d6549f3a9681b6827655ded0439-rimg-w1200-h800-gmir.jpg?v=1640968100",
         "dog-friendly": false,
         "patio": false,
-        "hours": "Monday-Wednesday, Sunday: 6pm - 12am; Thursday: 6pm - 1am; Friday-Saturday: 6pm - 2am ",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.edencocktailroom.com/"
       },
       {
@@ -78,7 +78,7 @@
         "image": "https://lostinaustin.org/wp-content/uploads/2016/10/ah-sing-den-09-large.jpg",
         "dog-friendly": false,
         "patio": true,
-        "hours": "Wednesday-Sunday: 5pm - 2am",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://ahsingden.com/"
       }
     ],
@@ -89,7 +89,7 @@
         "image": "http://img-aws.ehowcdn.com/1280x/www.onlyinyourstate.com/wp-content/uploads/2018/01/17361872_423581411316231_5240188629637383368_n-e1516971416548.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Wednesday: 8am - 10pm; Thursday-Friday: 8am - 11pm; Saturday: 9am - 11pm; Sunday: 9am - 9pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.batchatx.com/"
       },
       {
@@ -98,7 +98,7 @@
         "image": "https://infatuation.imgix.net/oddwood_ales_exterior_nicolai_mccrary.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday: Closed; Tuesday-Wednesday: 3pm - 11pm; Thursday-Saturday: 11am - 11pm; Sunday: 11am - 10pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.oddwoodales.com/"
       },
       {
@@ -107,7 +107,7 @@
         "image": "https://images.otstatic.com/prod1/30541930/3/huge.png",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Satyrday: 11am - 10pm; Sunday: 11am - 8pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://austinbeerworks.com/"
       },
       {
@@ -116,7 +116,7 @@
         "image": "https://www.allen-heath.com/media/meanwhile-3-1200.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Wednesday: 8am - 10pm; Thursday-Friday: 8am - 11pm; Saturday: 9am - 11pm; Sunday: 9am - 9pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.meanwhilebeer.com/"
       },
       {
@@ -125,7 +125,7 @@
         "image": "https://i0.wp.com/craftbeeraustin.com/wp-content/uploads/2021/03/holdoutbuilding-1024x768-1.jpg?resize=708%2C708&ssl=1",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday: 3pm - 10 pm; Tuesday-Friday: 11am - 11pm; Saturday: 10am - 11pm; Sunday: 10am - 10pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://holdoutbrewing.com/"
       },
       {
@@ -134,7 +134,7 @@
         "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/df/90/92/zilker-brewering-company.jpg?w=1200&h=-1&s=1",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Thursday: 11am - 10pm; Friday-Saturday: 11am - 11pm; Sunday: 11am - 8pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://zilkerbeer.com/"
       },
       {
@@ -143,7 +143,7 @@
         "image": "http://searchfortheholyale.com/wp-content/uploads/2020/01/xxxx.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Friday: 7:30am - 11pm; Saturday: 9am - 11pm; Sunday: 9am - 10pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.lazarusbrewing.com/"
       },
       {
@@ -152,7 +152,7 @@
         "image": "https://threebestrated.com/images/PinthousePizza-Austin-TX.png",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday-Thursday, Sunday: 11am - 10pm; Friday-Saturday: 11am - 11pm ",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://pinthouse.com/burnet"
       },
       {
@@ -161,7 +161,7 @@
         "image": "https://images.squarespace-cdn.com/content/v1/54fc7620e4b0297e020fb156/1585937912683-3JAJFHDLIKAKCQXD194T/Andrea_Calo_19594_w.jpg",
         "dog-friendly": true,
         "patio": true,
-        "hours": "Monday: Closed; Tuesday-Thursday: 4pm - 12am; Friday-Saturday: 11am - 12am; Sunday: 11am - 10pm",
+        "hours": ["Monday:", "Tuesday:", "Wednesday:", "Thursday:", "Friday:", "Saturday:", "Sunday"],
         "website": "https://www.cmwbrewery.com/"
       }
     ]
