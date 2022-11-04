@@ -1,43 +1,35 @@
 import React from "react"
-import {  NavLink } from "react-router-dom"
+import {  Link } from "react-router-dom"
+import { Button } from 'semantic-ui-react'
 
 function NavBar() {
+
     return (
-        <div className="navbar">
-            <ul>
-            <li>    
-            <NavLink 
+        <div className="navbar">   
+            <Button as={ Link }  
                 to="/"
                 exact
             >
                 Home
-            </NavLink>
-            </li>
-            <li>    
-            <NavLink 
+            </Button>   
+            <Button as={ Link } 
                 to="/bars"
                 exact
             >
                 Bars
-            </NavLink>
-            </li>
-            <li>
-            <NavLink 
+            </Button>
+            <Button as={ Link }  
                 to="/breweries"
                 exact
             >
                 Breweries
-            </NavLink>
-            </li>
-            <li>
-            <NavLink 
+            </Button>
+            <Button as={ Link }  
                 to="/submitform"
                 exact
             >
                 SubmitForm
-            </NavLink>
-            </li>
-            </ul>
+            </Button>
         </div>
     )
 
