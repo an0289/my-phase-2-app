@@ -11,12 +11,10 @@ return (
     </Segment>
     <Container>
     <Grid columns={3} divided>
-        <Grid.Row>
-        <Grid.Column>
+        <Grid.Row stretched>
             {bars.map((bar) => (
              <BarCard key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
             ))}
-        </Grid.Column>
         </Grid.Row>
     </Grid>
     </Container>
