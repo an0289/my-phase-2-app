@@ -1,11 +1,12 @@
 import React from "react"
 import {  Link } from "react-router-dom"
-import { Button, Container, Segment } from 'semantic-ui-react'
+import { Button, Container, Segment, Header, Divider } from 'semantic-ui-react'
 
 function NavBar() {
 
     return (
-        <div>
+    <>
+        <Header block >
              <Button size="large" color="black" as={ Link } 
                 to="/"
                 exact
@@ -30,7 +31,8 @@ function NavBar() {
             >
                 Add New
             </Button>
-        </div>
+        </Header>
+    </>
     )
 
 }
