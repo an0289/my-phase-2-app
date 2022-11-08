@@ -4,6 +4,12 @@ import BarCard from "./BarCard"
 
 
 function Bars({ bars, setBars}) {
+
+function handleDeleteBar(id) {
+    const updatedBars = bars.filter((bar) => bar.id !== id)
+    setBars(updatedBars)
+}
+
 return (
 <>
    
@@ -14,7 +20,7 @@ return (
     <Grid center columns={3} divided>
         <Grid.Row  >
             {bars.map((bar) => (
-             <BarCard key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
+             <BarCard onDeleteBar={handleDeleteBar} key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
             ))}
         </Grid.Row>
     </Grid>
