@@ -7,9 +7,11 @@ function Bars({ bars, setBars}) {
 return (
 <>
    
+    <Segment inverted padded="very">
+        <Header  textAlign="center" as="h1">Bars</Header>
+    </Segment>
     <Container>
-    <Header block textAlign="center" as="h1">Bars</Header>
-    <Grid columns={3} divided>
+    <Grid center columns={3} divided>
         <Grid.Row  >
             {bars.map((bar) => (
              <BarCard key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
