@@ -3,6 +3,12 @@ import {Container, Segment, Header, Grid, Image, Card, Icon } from 'semantic-ui-
 import BreweryCard from "./BreweryCard"
 
 function Breweries({ breweries, setBreweries}) {
+
+    function handleDeleteBrewery(id) {
+        const updatedBreweries = breweries.filter((brewery) => brewery.id !== id)
+        setBreweries(updatedBreweries)
+    }
+
     return (
     <>
         <Segment inverted padded="very">
@@ -12,7 +18,7 @@ function Breweries({ breweries, setBreweries}) {
         <Grid columns={3} divided>
             <Grid.Row stretched>
                 {breweries.map((brewery) => (
-                 <BreweryCard key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} website={brewery.website} hours={brewery.hours}/>
+                 <BreweryCard onDeleteBrewery={handleDeleteBrewery} key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} website={brewery.website} hours={brewery.hours}/>
                 ))}
             </Grid.Row>
         </Grid>

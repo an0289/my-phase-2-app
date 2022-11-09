@@ -10,6 +10,28 @@ function handleDeleteBar(id) {
     setBars(updatedBars)
 }
 
+function handleUpdateHours(id, hours) {
+    fetch(`http://localhost:3000/bars/${id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            "hours": [hours]
+        })
+    })
+        .then((r) => r.json())
+        .then((updatedBar) => {
+            const updatedBars = bars.map((bar) => {
+                if(bar.id === updatedBars.id) {
+                    return updatedBar
+                }
+                return bar
+            })
+            setBars(updatedBars)
+        })
+}
+
 return (
 <>
    
@@ -20,7 +42,9 @@ return (
     <Grid center columns={3} divided>
         <Grid.Row  >
             {bars.map((bar) => (
-             <BarCard onDeleteBar={handleDeleteBar} key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
+             <BarCard 
+             onDeleteBar={handleDeleteBar} onUpdateHours={handleUpdateHours}
+             key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
             ))}
         </Grid.Row>
     </Grid>
