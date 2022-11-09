@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Button, Checkbox, Form, Container, Header, Segment, Divider } from 'semantic-ui-react'
+import { Button, Checkbox, Form, Container, Header, Segment, Divider, Label } from 'semantic-ui-react'
 
 function SubmitForm({ onAddBar, onAddBrewery }) {
     const [formBarData, setFormBarData] = useState({
@@ -79,14 +79,10 @@ return (
 <Segment inverted padded="very">
         <Header  textAlign="center" as="h1">Add A New Bar or Brewery</Header>
 </Segment>
-    <Container text>
-    <Segment.Group raised>
-        <Segment inverted>
-        <Header as='h2'>Add A New Bar</Header>
-        </Segment>
-        <Segment.Group>
-        <Segment>
-            <Form onSubmit={handleBarSubmit}>
+<Container>
+    <Segment raised>
+        <Label size="massive" color="red" ribbon>Add A New Bar</Label>
+            <Form  onSubmit={handleBarSubmit}>
                 <Form.Field>
                 <label>Bar Name</label>
                 <input onChange={handleBarChange} type="text" name="name" value={formBarData.name} placeholder='Bar Name' />
@@ -97,31 +93,33 @@ return (
                 </Form.Field>
                 <Form.Group widths="equal">
                     <Form.Field>
-                    <label>Mon Hours</label>
+                    <label>Bar Hours</label>
+                    </Form.Field>
+                    <Form.Field>
                     <input onChange={handleBarChange} type="text" name="mondayHours" value={formBarData.mondayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <label>Tues Hours</label>
+                    {/* <label>Tues Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="tuesdayHours" value={formBarData.tuesdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <label>Wed Hours</label>
+                    {/* <label>Wed Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="wednesdayHours" value={formBarData.wednesdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <label>Thurs Hours</label>
+                    {/* <label>Thurs Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="thursdayHours" value={formBarData.thursdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <label>Fri Hours</label>
+                    {/* <label>Fri Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="fridayHours" value={formBarData.fridayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <label>Sat Hours</label>
+                    {/* <label>Sat Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="saturdayHours" value={formBarData.saturdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <label>Sun Hours</label>
+                    {/* <label>Sun Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="sundayHours" value={formBarData.sundayHours} placeholder='Hours' />
                     </Form.Field>
                 </Form.Group>
@@ -131,10 +129,8 @@ return (
                 </Form.Field>
                 <Button color="blue" type='submit'>Submit</Button>
             </Form>
-        </Segment>
-        </Segment.Group>
-    </Segment.Group> 
-    </Container>
+    </Segment> 
+</Container>
     <Divider hidden />
     <Container text>
     <Segment.Group raised>
