@@ -24,6 +24,14 @@ function App() {
     .then((breweries) => setBreweries(breweries))
    }, []) 
 
+   function handleAddBar(newBar) {
+    setBars([...bars, newBar])
+   }
+
+   function handleAddBrewery(newBrewery) {
+    setBreweries([...breweries, newBrewery])
+   }
+
 return (
     <div>
         <NavBar />
@@ -35,7 +43,7 @@ return (
                 <Breweries breweries={breweries} setBreweries={setBreweries}/>
             </Route>
             <Route exact path="/submitform">
-                <SubmitForm />
+                <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery} />
             </Route>
             <Route exact path="/">
                 <Home />
