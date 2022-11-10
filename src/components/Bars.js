@@ -43,7 +43,7 @@ return (
     <Segment inverted padded="very">
         <Header  textAlign="center" as="h1">Bars</Header>
     </Segment>
-    <Container>
+    <Segment compact>
         <Search
            size="huge"
            type="text" 
@@ -51,7 +51,7 @@ return (
            value={searchBar}
            onSearchChange={(e) => setSearchBar(e.target.value)}
         />
-    </Container>
+    </Segment>
     <Container>
     <Grid center columns={3} divided>
         <Grid.Row  >

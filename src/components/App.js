@@ -12,6 +12,7 @@ function App() {
     const [bars, setBars] = useState([])
     const [breweries, setBreweries] = useState([])
     const [searchBar, setSearchBar] = useState("")
+    const [searchBrewery, setSearchBrewery] = useState("")
     
 
    useEffect(() => {
@@ -42,7 +43,7 @@ return (
                 <Bars searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">
-                <Breweries breweries={breweries} setBreweries={setBreweries}/>
+                <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}/>
             </Route>
             <Route exact path="/submitform">
                 <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery} />
