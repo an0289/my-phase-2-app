@@ -11,6 +11,7 @@ import { Divider, Segment } from 'semantic-ui-react'
 function App() {
     const [bars, setBars] = useState([])
     const [breweries, setBreweries] = useState([])
+    
 
    useEffect(() => {
     fetch("http://localhost:3000/bars")
@@ -43,7 +44,7 @@ return (
                 <Breweries breweries={breweries} setBreweries={setBreweries}/>
             </Route>
             <Route exact path="/submitform">
-                <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery} />
+                <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery}  />
             </Route>
             <Route exact path="/">
                 <Home />

@@ -3,7 +3,7 @@ import {Container, Segment, Header, Grid, Image, Card, Button, Icon } from 'sema
 import BarCard from "./BarCard"
 
 
-function Bars({ bars, setBars}) {
+function Bars({ bars, setBars }) {
 
 function handleDeleteBar(id) {
     const updatedBars = bars.filter((bar) => bar.id !== id)

@@ -58,7 +58,8 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
                 "name": formBarData.name,
                 "image": formBarData.image,
                 "hours": [formBarData.mondayHours, formBarData.tuesdayHours, formBarData.wednesdayHours,formBarData.thursdayHours, formBarData.fridayHours, formBarData.saturdayHours, formBarData.sundayHours],
-                "website": formBarData.website
+                "website": formBarData.website,
+                "petFriendly": formBarData.petFriendly
             })
         })
             .then((r) => r.json())
@@ -131,6 +132,12 @@ return (
                 <Form.Field>
                 <label>Bar Website</label>
                 <input onChange={handleBarChange} type="text" name="website" value={formBarData.website} placeholder='Bar Website' />
+                </Form.Field>
+                <Form.Field>
+                    <Checkbox onChange={handleBarChange} checked={formBarData.petFriendly} label="Pet Friendly"/>
+                </Form.Field>
+                <Form.Field>
+                    <Checkbox  label="Patio"/>
                 </Form.Field>
                 <Button color="blue" type='submit'>Submit</Button>
             </Form>
