@@ -1,9 +1,14 @@
 import React from 'react'
-import {Container, Segment, Header, Grid, Image, Card, Button, Icon } from 'semantic-ui-react'
+import {Container, Segment, Header, Grid, Image, Card, Button, Icon, Search } from 'semantic-ui-react'
 import BarCard from "./BarCard"
 
 
-function Bars({ bars, setBars }) {
+function Bars({ bars, setBars, searchBar, setSearchBar }) {
+
+const barsToDisplay = bars.filter((bar) => {
+    if(searchBar === "") return true;
+    return bar.name.toLowerCase().includes(searchBar.toLowerCase())
+})
 
 function handleDeleteBar(id) {
     const updatedBars = bars.filter((bar) => bar.id !== id)
@@ -39,9 +44,18 @@ return (
         <Header  textAlign="center" as="h1">Bars</Header>
     </Segment>
     <Container>
+        <Search
+           size="huge"
+           type="text" 
+           placeholder="Search..."
+           value={searchBar}
+           onSearchChange={(e) => setSearchBar(e.target.value)}
+        />
+    </Container>
+    <Container>
     <Grid center columns={3} divided>
         <Grid.Row  >
-            {bars.map((bar) => (
+            {barsToDisplay.map((bar) => (
              <BarCard 
              onDeleteBar={handleDeleteBar} onUpdateHours={handleUpdateHours}
              key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours} petFriendly={bar.petFriendly}/>

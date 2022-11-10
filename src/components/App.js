@@ -11,6 +11,7 @@ import { Divider, Segment } from 'semantic-ui-react'
 function App() {
     const [bars, setBars] = useState([])
     const [breweries, setBreweries] = useState([])
+    const [searchBar, setSearchBar] = useState("")
     
 
    useEffect(() => {
@@ -38,13 +39,13 @@ return (
         <NavBar />
         <Switch>
             <Route exact path="/bars">
-                <Bars bars={bars} setBars={setBars}/>   
+                <Bars searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">
                 <Breweries breweries={breweries} setBreweries={setBreweries}/>
             </Route>
             <Route exact path="/submitform">
-                <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery}  />
+                <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery} />
             </Route>
             <Route exact path="/">
                 <Home />

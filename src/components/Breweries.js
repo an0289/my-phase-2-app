@@ -42,7 +42,7 @@ function Breweries({ breweries, setBreweries}) {
                 {breweries.map((brewery) => (
                  <BreweryCard 
                  onDeleteBrewery={handleDeleteBrewery} onUpdateHours={handleUpdateHours}
-                 key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} website={brewery.website} hours={brewery.hours}/>
+                 key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} website={brewery.website} hours={brewery.hours} petFriendly={brewery.petFriendly}/>
                 ))}
             </Grid.Row>
         </Grid>

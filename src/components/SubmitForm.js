@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Button, Checkbox, Form, Container, Header, Segment, Divider, Label } from 'semantic-ui-react'
 
 function SubmitForm({ onAddBar, onAddBrewery }) {
+    
     const [formBarData, setFormBarData] = useState({
         name: "",
         image: "",
