@@ -5,6 +5,8 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
     const [formBarData, setFormBarData] = useState({
         name: "",
         image: "",
+        petFriendly: false,
+        patio: false,
         mondayHours: "Monday: ",
         tuesdayHours: "Tuesday: ",
         wednesdayHours: "Wednesday: ",
@@ -18,6 +20,8 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
     const [formBreweryData, setFormBreweryData] = useState({
         name: "",
         image: "",
+        petFriendly: false,
+        patio: false,
         mondayHours: "Monday: ",
         tuesdayHours: "Tuesday: ",
         wednesdayHours: "Wednesday: ",
@@ -106,27 +110,21 @@ return (
                     <input onChange={handleBarChange} type="text" name="mondayHours" value={formBarData.mondayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Tues Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="tuesdayHours" value={formBarData.tuesdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Wed Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="wednesdayHours" value={formBarData.wednesdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Thurs Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="thursdayHours" value={formBarData.thursdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Fri Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="fridayHours" value={formBarData.fridayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Sat Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="saturdayHours" value={formBarData.saturdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Sun Hours</label> */}
                     <input onChange={handleBarChange} type="text" name="sundayHours" value={formBarData.sundayHours} placeholder='Hours' />
                     </Form.Field>
                 </Form.Group>
@@ -161,27 +159,21 @@ return (
                     <input onChange={handleBreweryChange} type="text" name="mondayHours" value={formBreweryData.mondayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Tues Hours</label> */}
                     <input onChange={handleBreweryChange} type="text" name="tuesdayHours" value={formBreweryData.tuesdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Wed Hours</label> */}
                     <input onChange={handleBreweryChange} type="text" name="wednesdayHours" value={formBreweryData.wednesdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Thurs Hours</label> */}
                     <input onChange={handleBreweryChange} type="text" name="thursdayHours" value={formBreweryData.thursdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Fri Hours</label> */}
                     <input onChange={handleBreweryChange} type="text" name="fridayHours" value={formBreweryData.fridayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Sat Hours</label> */}
                     <input onChange={handleBreweryChange} type="text" name="saturdayHours" value={formBreweryData.saturdayHours} placeholder='Hours' />
                     </Form.Field>
                     <Form.Field>
-                    {/* <label>Sun Hours</label> */}
                     <input onChange={handleBreweryChange} type="text" name="sundayHours" value={formBreweryData.sundayHours} placeholder='Hours' />
                     </Form.Field>
                 </Form.Group>

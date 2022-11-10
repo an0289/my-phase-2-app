@@ -44,7 +44,7 @@ return (
             {bars.map((bar) => (
              <BarCard 
              onDeleteBar={handleDeleteBar} onUpdateHours={handleUpdateHours}
-             key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours}/>
+             key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours} petFriendly={bar.petFriendly}/>
             ))}
         </Grid.Row>
     </Grid>

@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Workhorse Bar",
       "image": "https://media-cdn.tripadvisor.com/media/photo-s/21/5b/c9/fa/wow.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 11am-12am",
@@ -21,7 +21,7 @@
       "id": 2,
       "name": "Zanzibar",
       "image": "https://resizer.otstatic.com/v2/photos/xlarge/3/31846328.jpg",
-      "dog-friendly": false,
+      "petFriendly": false,
       "patio": true,
       "hours": [
         "Monday: 4pm-12am",
@@ -38,7 +38,7 @@
       "id": 3,
       "name": "Corinne",
       "image": "https://resizer.otstatic.com/v2/photos/xlarge/1/40964762.jpg",
-      "dog-friendly": false,
+      "petFriendly": false,
       "patio": true,
       "hours": [
         "Monday: 7am-11pm",
@@ -55,7 +55,7 @@
       "id": 4,
       "name": "Hank's",
       "image": "https://media-cdn.tripadvisor.com/media/photo-p/19/f4/85/70/entrance-to-hank-s.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 8am-9pm",
@@ -72,7 +72,7 @@
       "id": 5,
       "name": "Tiki Tatsu-Ya",
       "image": "https://cdn.vox-cdn.com/thumbor/6CsKdbL_ace9WhwIRSLWrRCtAJ0=/0x0:3745x5617/1200x0/filters:focal(0x0:3745x5617):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22885459/0C2A8528.jpg",
-      "dog-friendly": false,
+      "petFriendly": false,
       "patio": false,
       "hours": [
         "Monday: 4pm-12am",
@@ -89,7 +89,7 @@
       "id": 6,
       "name": "Lala's",
       "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/Courtesy-of-Lala-s-Little-Nugget-2--8af88886f622886_8af88972-c5cf-a064-8f26e53369bbaa45.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 4pm-2am",
@@ -106,7 +106,7 @@
       "id": 7,
       "name": "Shangri-La",
       "image": "https://6street.com/wp-content/uploads/2015/05/shangri-la-header-1024x683.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 4pm-2am",
@@ -123,7 +123,7 @@
       "id": 8,
       "name": "Eden Cocktail Room",
       "image": "https://cdn.stayhappening.com/events5/banners/963e35c8420900f2c9aea1db6dd9fd1f7c169d6549f3a9681b6827655ded0439-rimg-w1200-h800-gmir.jpg?v=1640968100",
-      "dog-friendly": false,
+      "petFriendly": false,
       "patio": false,
       "hours": [
         "Monday: 6pm-12am",
@@ -140,7 +140,7 @@
       "id": 9,
       "name": "Ah Sing Den",
       "image": "https://lostinaustin.org/wp-content/uploads/2016/10/ah-sing-den-09-large.jpg",
-      "dog-friendly": false,
+      "petFriendly": false,
       "patio": true,
       "hours": [
         "Monday: Closed",
@@ -174,7 +174,7 @@
       "id": 1,
       "name": "Batch",
       "image": "http://img-aws.ehowcdn.com/1280x/www.onlyinyourstate.com/wp-content/uploads/2018/01/17361872_423581411316231_5240188629637383368_n-e1516971416548.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 8am-10pm",
@@ -191,7 +191,7 @@
       "id": 2,
       "name": "Oddwood",
       "image": "https://infatuation.imgix.net/oddwood_ales_exterior_nicolai_mccrary.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: Closed",
@@ -208,7 +208,7 @@
       "id": 3,
       "name": "Austin Beerworks",
       "image": "https://images.otstatic.com/prod1/30541930/3/huge.png",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 11am-10pm",
@@ -225,7 +225,7 @@
       "id": 4,
       "name": "Meanwhile",
       "image": "https://www.allen-heath.com/media/meanwhile-3-1200.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 8am-10pm",
@@ -242,7 +242,7 @@
       "id": 5,
       "name": "Hold Out",
       "image": "https://i0.wp.com/craftbeeraustin.com/wp-content/uploads/2021/03/holdoutbuilding-1024x768-1.jpg?resize=708%2C708&ssl=1",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 3pm-10pm ",
@@ -259,7 +259,7 @@
       "id": 6,
       "name": "Zilker Brewing",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/df/90/92/zilker-brewering-company.jpg?w=1200&h=-1&s=1",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 11am-10pm",
@@ -276,7 +276,7 @@
       "id": 7,
       "name": "Lazarus",
       "image": "http://searchfortheholyale.com/wp-content/uploads/2020/01/xxxx.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 7:30am-11pm",
@@ -293,7 +293,7 @@
       "id": 8,
       "name": "Pinthouse Pizza",
       "image": "https://threebestrated.com/images/PinthousePizza-Austin-TX.png",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 11am-10pm",
@@ -310,7 +310,7 @@
       "id": 9,
       "name": "Central Machine Works",
       "image": "https://images.squarespace-cdn.com/content/v1/54fc7620e4b0297e020fb156/1585937912683-3JAJFHDLIKAKCQXD194T/Andrea_Calo_19594_w.jpg",
-      "dog-friendly": true,
+      "petFriendly": true,
       "patio": true,
       "hours": [
         "Monday: 4pm-12am",
