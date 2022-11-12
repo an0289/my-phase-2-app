@@ -2,11 +2,19 @@ import React, { useState } from "react"
 import { Button, Checkbox, Form, Container, Header, Segment, Divider, Label } from 'semantic-ui-react'
 
 function SubmitForm({ onAddBar, onAddBrewery }) {
+   const [isChecked, setIsChecked] = useState(false)
+
+   function handleCheckBox() {
+    setIsChecked((isChecked) => !isChecked)
+    console.log(isChecked)
+   }
+   
+
     
     const [formBarData, setFormBarData] = useState({
         name: "",
         image: "",
-        petFriendly: false,
+        petFriendly: false, 
         patio: false,
         mondayHours: "Monday: ",
         tuesdayHours: "Tuesday: ",
@@ -38,7 +46,12 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             ...formBarData,
             [event.target.name]: event.target.value
         })
+        console.log(event.target.checked)
+        console.log(event.target.value)
+        console.log(formBarData.petFriendly)
     }
+
+
 
     function handleBreweryChange(event) {
         setFormBreweryData({
@@ -132,10 +145,10 @@ return (
                 </Form.Group>
                 <Form.Field>
                 <label>Bar Website</label>
-                <input onChange={handleBarChange} type="text" name="website" value={formBarData.website} placeholder='Bar Website' />
+                <input onChange={handleBarChange} type="text" name="website" value={formBarData.website}  placeholder='Bar Website' />
                 </Form.Field>
                 <Form.Field>
-                    <Checkbox onChange={handleBarChange} checked={formBarData.petFriendly} label="Pet Friendly"/>
+                    <Checkbox type="checkbox" name="petFriendly"  value={formBarData.petFriendly} onChange={handleBarChange}  label="Pet Friendly"/>
                 </Form.Field>
                 <Form.Field>
                     <Checkbox  label="Patio"/>
