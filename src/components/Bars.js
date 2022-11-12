@@ -3,7 +3,7 @@ import {Container, Segment, Header, Grid, Image, Card, Button, Icon, Search } fr
 import BarCard from "./BarCard"
 
 
-function Bars({ bars, setBars, searchBar, setSearchBar }) {
+function Bars({ bars, setBars, searchBar, setSearchBar, onUpdateBarHours }) {
 
 const barsToDisplay = bars.filter((bar) => {
     if(searchBar === "") return true;
@@ -15,32 +15,11 @@ function handleDeleteBar(id) {
     setBars(updatedBars)
 }
 
-function handleUpdateHours(id, hours) {
-    fetch(`http://localhost:3000/bars/${id}`, {
-        method: "PATCH",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            "hours": [hours]
-        })
-    })
-        .then((r) => r.json())
-        .then((updatedBar) => {
-            const updatedBars = bars.map((bar) => {
-                if(bar.id === updatedBars.id) {
-                    return updatedBar
-                }
-                return bar
-            })
-            setBars(updatedBars)
-        })
-}
 
 return (
 <>
    
-    <Segment inverted padded="very">
+    <Segment  style={{"backgroundColor":"black"}} inverted padded="very">
         <Header  textAlign="center" as="h1">Bars</Header>
     </Segment>
     <Segment compact>
@@ -52,13 +31,13 @@ return (
            onSearchChange={(e) => setSearchBar(e.target.value)}
         />
     </Segment>
-    <Container>
+    <Container >
     <Grid center columns={3} divided>
         <Grid.Row  >
             {barsToDisplay.map((bar) => (
              <BarCard 
-             onDeleteBar={handleDeleteBar} onUpdateHours={handleUpdateHours}
-             key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours} petFriendly={bar.petFriendly}/>
+             onDeleteBar={handleDeleteBar} onUpdateBarHours={onUpdateBarHours}
+             key={bar.id} id={bar.id} name={bar.name} image={bar.image} website={bar.website} hours={bar.hours} petFriendly={bar.petFriendly} likes={bar.likes} />
             ))}
         </Grid.Row>
     </Grid>

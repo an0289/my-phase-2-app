@@ -14,6 +14,7 @@ function App() {
     const [searchBar, setSearchBar] = useState("")
     const [searchBrewery, setSearchBrewery] = useState("")
     
+    
 
    useEffect(() => {
     fetch("http://localhost:3000/bars")
@@ -35,12 +36,25 @@ function App() {
     setBreweries([...breweries, newBrewery])
    }
 
+   function updateBarHours(updatedBar){
+    const updatedBars = bars.map((bar) => {
+        if(bar.id === updatedBar.id) {
+            return updatedBar
+        }
+        return bar
+    })
+    setBars(updatedBars)
+    }
+
+
+
 return (
-    <div>
+    <div >
         <NavBar />
+        <div style={{"backgroundColor":"white"}}>
         <Switch>
             <Route exact path="/bars">
-                <Bars searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
+                <Bars  onUpdateBarHours={updateBarHours} searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">
                 <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}/>
@@ -52,6 +66,7 @@ return (
                 <Home />
             </Route>
         </Switch>
+        </div>
     </div>
 )
 }

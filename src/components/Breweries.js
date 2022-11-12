@@ -21,7 +21,7 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery}) 
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                "hours": [hours]
+                "hours": hours
             })
         })
             .then((r) => r.json())
@@ -38,7 +38,7 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery}) 
 
     return (
     <>
-        <Segment inverted padded="very">
+        <Segment style={{"backgroundColor":"black"}} inverted padded="very">
             <Header textAlign="center" as="h1">Breweries</Header>
         </Segment>
         <Segment compact>
@@ -56,7 +56,7 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery}) 
                 {breweriesToDisplay.map((brewery) => (
                  <BreweryCard 
                  onDeleteBrewery={handleDeleteBrewery} onUpdateHours={handleUpdateHours}
-                 key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} website={brewery.website} hours={brewery.hours} petFriendly={brewery.petFriendly}/>
+                 key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} hours={brewery.hours} website={brewery.website} petFriendly={brewery.petFriendly} likes={brewery.likes} />
                 ))}
             </Grid.Row>
         </Grid>

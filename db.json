@@ -7,15 +7,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 11am-12am",
-        "Tuesday: 11am-12am",
-        "Wednesday: 11am-12am",
-        "Thursday: 11am-12am",
-        "Friday: 11am-12am",
-        "Saturday: 11am-12am",
-        "Sunday: 11am-12am"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "http://www.workhorsebar.com/"
+      "website": "http://www.workhorsebar.com/",
+      "likes": 0
     },
     {
       "id": 2,
@@ -24,7 +25,7 @@
       "petFriendly": false,
       "patio": true,
       "hours": [
-        "Monday: 4pm-12am",
+        "Monday: 12pm-12am",
         "Tuesday: 4pm-12am",
         "Wednesday: 4pm-12am",
         "Thursday: 4pm-12am",
@@ -32,7 +33,8 @@
         "Saturday: 12pm-12am",
         "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.zanzibaratx.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MTgwOTg5NDgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
+      "website": "https://www.zanzibaratx.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MTgwOTg5NDgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "likes": 0
     },
     {
       "id": 3,
@@ -41,15 +43,16 @@
       "petFriendly": false,
       "patio": true,
       "hours": [
-        "Monday: 7am-11pm",
-        "Tuesday: 7am-11pm",
-        "Wednesday: 7am-11pm",
-        "Thursday: 7am-11pm",
-        "Friday: 7am-11pm",
-        "Saturday: 7am-11pm",
-        "Sunday: 7am-11pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.corinneatx.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjA1Nzc1NTMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
+      "website": "https://www.corinneatx.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MjA1Nzc1NTMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "likes": 0
     },
     {
       "id": 4,
@@ -58,15 +61,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 8am-9pm",
-        "Tuesday: 8am-9pm",
-        "Wednesday: 8am-9pm",
-        "Thursday: 8am-9pm",
-        "Friday: 8am-10pm",
-        "Saturday: 8am-10pm",
-        "Sunday: 8am-9pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.hanksaustin.com/"
+      "website": "https://www.hanksaustin.com/",
+      "likes": 0
     },
     {
       "id": 5,
@@ -75,15 +79,16 @@
       "petFriendly": false,
       "patio": false,
       "hours": [
-        "Monday: 4pm-12am",
+        "Monday: 12pm-12am",
         "Tuesday: 4pm-12am",
         "Wednesday: 4pm-12am",
-        "Thursday: 4pm-2am",
-        "Friday: 4pm-2am",
-        "Saturday: 1pm-2am",
-        "Sunday: 1pm-10pm"
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.tiki-tatsuya.com/"
+      "website": "https://www.tiki-tatsuya.com/",
+      "likes": 0
     },
     {
       "id": 6,
@@ -92,15 +97,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 4pm-2am",
-        "Tuesday: 4pm-2am",
-        "Wednesday: 4pm-2am",
-        "Thursday: 4pm-2am",
-        "Friday: 4pm-2am",
-        "Saturday: 4pm-2am",
-        "Sunday: 4pm-2am"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.lalasaustintexas.com/"
+      "website": "https://www.lalasaustintexas.com/",
+      "likes": 0
     },
     {
       "id": 7,
@@ -109,15 +115,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 4pm-2am",
-        "Tuesday: 4pm-2am",
-        "Wednesday: 4pm-2am",
-        "Thursday: 4pm-2am",
-        "Friday: 2am-2pm",
-        "Saturday: 2am-2pm",
-        "Sunday: 2am-2pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://shangrilaaustin.com/"
+      "website": "https://shangrilaaustin.com/",
+      "likes": 0
     },
     {
       "id": 8,
@@ -126,15 +133,16 @@
       "petFriendly": false,
       "patio": false,
       "hours": [
-        "Monday: 6pm-12am",
-        "Tuesday: 6pm-12am",
-        "Wednesday: 6pm-12am",
-        "Thursday: 6pm-1am",
-        "Friday: 6pm-2am",
-        "Saturday: 6pm-2am",
-        "Sunday: 6pm-12am"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.edencocktailroom.com/"
+      "website": "https://www.edencocktailroom.com/",
+      "likes": 0
     },
     {
       "id": 9,
@@ -143,31 +151,16 @@
       "petFriendly": false,
       "patio": true,
       "hours": [
-        "Monday: Closed",
-        "Tuesday: Closed",
-        "Wednesday: 5pm-2am",
-        "Thursday: 5pm-2am",
-        "Friday: 5pm-2am",
-        "Saturday: 5pm-2am",
-        "Sunday: 5pm-2am"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://ahsingden.com/"
-    },
-    {
-      "name": "Whisler's",
-      "image": "https://nowandgen.com/wp-content/uploads/2019/07/AND-6386-copy-1024x684.jpg",
-      "hours": [
-        "Monday:  4pm-2am",
-        "Tuesday:  4pm-2am",
-        "Wednesday:  4pm-2am",
-        "Thursday:  4pm-2am",
-        "Friday: 4pm-2am ",
-        "Saturday: 4pm-2am ",
-        "Sunday: 4pm-2am "
-      ],
-      "website": "https://whislersatx.com/",
-      "petFriendly": false,
-      "id": 10
+      "website": "https://ahsingden.com/",
+      "likes": 0
     }
   ],
   "breweries": [
@@ -178,15 +171,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 8am-10pm",
-        "Tuesday: 8am-10pm,",
-        "Wednesday: 8am-10pm",
-        "Thursday: 8am-11pm",
-        "Friday: 8am-11pm",
-        "Saturday: 9am-11pm",
-        "Sunday: 9am-9pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.batchatx.com/"
+      "website": "https://www.batchatx.com/",
+      "likes": 0
     },
     {
       "id": 2,
@@ -195,15 +189,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: Closed",
-        "Tuesday: 3pm-11pm",
-        "Wednesday: 3pm-11pm",
-        "Thursday: 11am-11pm",
-        "Friday: 11am-11pm",
-        "Saturday: 11am-11pm",
-        "Sunday: 11am-10pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.oddwoodales.com/"
+      "website": "https://www.oddwoodales.com/",
+      "likes": 0
     },
     {
       "id": 3,
@@ -212,15 +207,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 11am-10pm",
-        "Tuesday: 11am-10pm",
-        "Wednesday: 11am-10pm",
-        "Thursday: 11am-10pm",
-        "Friday: 11am-10pm",
-        "Saturday: 11am-10pm",
-        "Sunday: 11am-8pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://austinbeerworks.com/"
+      "website": "https://austinbeerworks.com/",
+      "likes": 0
     },
     {
       "id": 4,
@@ -229,15 +225,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 8am-10pm",
-        "Tuesday: 8am-10pm",
-        "Wednesday: 8am-10pm",
-        "Thursday: 8am-11pm",
-        "Friday: 8am-11pm",
-        "Saturday: 9am-11pm",
-        "Sunday: 9am-9pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.meanwhilebeer.com/"
+      "website": "https://www.meanwhilebeer.com/",
+      "likes": 0
     },
     {
       "id": 5,
@@ -246,15 +243,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 3pm-10pm ",
-        "Tuesday: 11am-11pm",
-        "Wednesday: 11am-11pm",
-        "Thursday: 11am-11pm",
-        "Friday: 11am-11pm",
-        "Saturday: 10am-11pm",
-        "Sunday: 10am-10pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://holdoutbrewing.com/"
+      "website": "https://holdoutbrewing.com/",
+      "likes": 0
     },
     {
       "id": 6,
@@ -263,15 +261,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 11am-10pm",
-        "Tuesday: 11am-10pm",
-        "Wednesday: 11am-10pm",
-        "Thursday: 11am-10pm",
-        "Friday: 11am-11pm",
-        "Saturday: 11am-11pm",
-        "Sunday: 11am-8pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://zilkerbeer.com/"
+      "website": "https://zilkerbeer.com/",
+      "likes": 0
     },
     {
       "id": 7,
@@ -280,15 +279,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 7:30am-11pm",
-        "Tuesday: 7:30am-11pm",
-        "Wednesday: 7:30am-11pm",
-        "Thursday: 7:30am-11pm",
-        "Friday: 7:30am-11pm",
-        "Saturday: 9am-11pm",
-        "Sunday: 9am-10pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.lazarusbrewing.com/"
+      "website": "https://www.lazarusbrewing.com/",
+      "likes": 0
     },
     {
       "id": 8,
@@ -297,15 +297,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 11am-10pm",
-        "Tuesday: 11am-10pm",
-        "Wednesday: 11am-10pm",
-        "Thursday: 11am-10pm",
-        "Friday: 11am-11pm",
-        "Saturday: 11am-11pm",
-        "Sunday: 11am-10pm"
+        "Monday: 12pm-12am",
+        "Tuesday: 4pm-12am",
+        "Wednesday: 4pm-12am",
+        "Thursday: 4pm-12am",
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://pinthouse.com/burnet"
+      "website": "https://pinthouse.com/burnet",
+      "likes": 0
     },
     {
       "id": 9,
@@ -314,15 +315,16 @@
       "petFriendly": true,
       "patio": true,
       "hours": [
-        "Monday: 4pm-12am",
+        "Monday: 12pm-12am",
         "Tuesday: 4pm-12am",
         "Wednesday: 4pm-12am",
         "Thursday: 4pm-12am",
-        "Friday: 11am-12am",
-        "Saturday: 11am-12am",
-        "Sunday: 11am-10pm"
+        "Friday: 12pm-12am",
+        "Saturday: 12pm-12am",
+        "Sunday: 12pm-10pm"
       ],
-      "website": "https://www.cmwbrewery.com/"
+      "website": "https://www.cmwbrewery.com/",
+      "likes": 0
     }
   ]
 }
