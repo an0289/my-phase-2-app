@@ -36,7 +36,7 @@ function App() {
     setBreweries([...breweries, newBrewery])
    }
 
-   function updateBarHours(updatedBar){
+   function updateBarLikes(updatedBar){
     const updatedBars = bars.map((bar) => {
         if(bar.id === updatedBar.id) {
             return updatedBar
@@ -54,7 +54,7 @@ return (
         <div style={{"backgroundColor":"white"}}>
         <Switch>
             <Route exact path="/bars">
-                <Bars  onUpdateBarHours={updateBarHours} searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
+                <Bars  onUpdateBarLikes={updateBarLikes} searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">
                 <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}/>
