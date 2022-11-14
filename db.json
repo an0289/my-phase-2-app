@@ -16,7 +16,7 @@
         "Sunday: 12pm-10pm"
       ],
       "website": "http://www.workhorsebar.com/",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 2,
@@ -196,7 +196,19 @@
         "Sunday: 12pm-10pm"
       ],
       "website": "https://www.batchatx.com/",
-      "likes": 0
+      "likes": 0,
+      "brewery": {
+        "hours": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "website": "https://www.batchatx.com/"
+      }
     },
     {
       "id": 2,

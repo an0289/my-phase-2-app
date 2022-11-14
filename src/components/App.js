@@ -46,6 +46,16 @@ function App() {
     setBars(updatedBars)
     }
 
+    function updateBrewery(updatedBrewery) {
+     const updatedBreweries = breweries.map((brewery) => {
+        if(brewery.id === updatedBrewery.id) {
+            return updatedBrewery
+        }
+        return brewery
+     })
+     setBreweries(updatedBreweries)
+    }
+
 
 
 return (
@@ -57,7 +67,8 @@ return (
                 <Bars  onUpdateBarLikes={updateBarLikes} searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">
-                <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}/>
+                <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}
+                onUpdateBrewery={updateBrewery}/>
             </Route>
             <Route exact path="/submitform">
                 <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery} />

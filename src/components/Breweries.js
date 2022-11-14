@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import {Container, Segment, Header, Grid, Image, Card, Icon, Search } from 'semantic-ui-react'
 import BreweryCard from "./BreweryCard"
 
-function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery}) {
+function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, onUpdateBrewery}) {
 
     const breweriesToDisplay = breweries.filter((brewery) => {
         if(searchBrewery === "") return true;
@@ -14,27 +14,7 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery}) 
         setBreweries(updatedBreweries)
     }
 
-    function handleUpdateHours(id, hours) {
-        fetch(`http://localhost:3000/breweries/${id}`, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                "hours": hours
-            })
-        })
-            .then((r) => r.json())
-            .then((updatedBrewery) => {
-                const updatedBreweries = breweries.map((brewery) => {
-                    if(brewery.id === updatedBreweries.id) {
-                        return updatedBrewery
-                    }
-                    return brewery
-                })
-                setBreweries(updatedBreweries)
-            })
-    }
+   
 
     return (
     <>
@@ -55,8 +35,9 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery}) 
             <Grid.Row stretched>
                 {breweriesToDisplay.map((brewery) => (
                  <BreweryCard 
-                 onDeleteBrewery={handleDeleteBrewery} onUpdateHours={handleUpdateHours}
-                 key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} hours={brewery.hours} website={brewery.website} petFriendly={brewery.petFriendly} likes={brewery.likes} />
+                 onDeleteBrewery={handleDeleteBrewery} 
+                 key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} hours={brewery.hours} website={brewery.website} petFriendly={brewery.petFriendly} likes={brewery.likes} 
+                 onUpdateBrewery={onUpdateBrewery}/>
                 ))}
             </Grid.Row>
         </Grid>
