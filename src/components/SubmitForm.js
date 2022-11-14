@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useHistory } from "react-router-dom"
 import { Button, Checkbox, Form, Container, Header, Segment, Divider, Label } from 'semantic-ui-react'
 
 function SubmitForm({ onAddBar, onAddBrewery }) {
@@ -83,6 +84,8 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             .then((newBar) => onAddBar(newBar))
     }
 
+    const history = useHistory()
+
     function handleBrewerySubmit(e) {
         e.preventDefault()
 
@@ -99,7 +102,9 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             })
         })
             .then((r) => r.json())
-            .then((newBrewery) => onAddBrewery(newBrewery))
+            .then((newBrewery) => {
+                onAddBrewery(newBrewery)
+                console.log(newBrewery)})
     }
 
 return (
