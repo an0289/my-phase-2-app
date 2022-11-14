@@ -34,7 +34,7 @@
         "Sunday: 12pm-10pm"
       ],
       "website": "https://www.zanzibaratx.com/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MTgwOTg5NDgtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 3,
@@ -182,7 +182,7 @@
   "breweries": [
     {
       "id": 1,
-      "name": "Batch",
+      "name": "Batch Brewery",
       "image": "http://img-aws.ehowcdn.com/1280x/www.onlyinyourstate.com/wp-content/uploads/2018/01/17361872_423581411316231_5240188629637383368_n-e1516971416548.jpg",
       "petFriendly": true,
       "patio": true,
@@ -196,18 +196,10 @@
         "Sunday: 12pm-10pm"
       ],
       "website": "https://www.batchatx.com/",
-      "likes": 0,
+      "likes": 1,
       "brewery": {
-        "hours": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "website": "https://www.batchatx.com/"
+        "name": "Batch Brewery",
+        "image": "http://img-aws.ehowcdn.com/1280x/www.onlyinyourstate.com/wp-content/uploads/2018/01/17361872_423581411316231_5240188629637383368_n-e1516971416548.jpg"
       }
     },
     {

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import {Container, Segment, Header, Grid, Image, Card, Icon, Search } from 'semantic-ui-react'
 import BreweryCard from "./BreweryCard"
 
-function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, onUpdateBrewery}) {
+function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, onUpdateBrewery, onUpdateBreweryLikes}) {
 
     const breweriesToDisplay = breweries.filter((brewery) => {
         if(searchBrewery === "") return true;
@@ -36,8 +36,9 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, o
                 {breweriesToDisplay.map((brewery) => (
                  <BreweryCard 
                  onDeleteBrewery={handleDeleteBrewery} 
-                 key={brewery.id} id={brewery.id} name={brewery.name} image={brewery.image} hours={brewery.hours} website={brewery.website} petFriendly={brewery.petFriendly} likes={brewery.likes} 
-                 onUpdateBrewery={onUpdateBrewery}/>
+                brewery={brewery}
+                 onUpdateBrewery={onUpdateBrewery}
+                 onUpdateBreweryLikes={onUpdateBreweryLikes}/>
                 ))}
             </Grid.Row>
         </Grid>

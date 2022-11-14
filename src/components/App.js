@@ -56,6 +56,16 @@ function App() {
      setBreweries(updatedBreweries)
     }
 
+    function updateBreweryLikes(updatedBrewery) {
+        const updatedBreweries = breweries.map((brewery) => {
+            if(brewery.id === updatedBrewery.id) {
+                return updatedBrewery
+            }
+            return brewery
+        })
+        setBreweries(updatedBreweries)
+    }
+
 
 
 return (
@@ -68,7 +78,8 @@ return (
             </Route>
             <Route exact path="/breweries">
                 <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}
-                onUpdateBrewery={updateBrewery}/>
+                onUpdateBrewery={updateBrewery}
+                onUpdateBreweryLikes={updateBreweryLikes}/>
             </Route>
             <Route exact path="/submitform">
                 <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery} />
