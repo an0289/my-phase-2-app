@@ -4,10 +4,8 @@ import { Button, Checkbox, Form, Container, Header, Segment, Divider, Label } fr
 
 function SubmitForm({ onAddBar, onAddBrewery }) {
    
-    
-   
+    const history = useHistory()
 
-    
     const [formBarData, setFormBarData] = useState({
         name: "",
         image: "",
@@ -81,10 +79,12 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             })
         })
             .then((r) => r.json())
-            .then((newBar) => onAddBar(newBar))
+            .then((newBar) => {
+                onAddBar(newBar)
+                history.push("http://localhost:3001/bars/id")})
     }
 
-    const history = useHistory()
+    
 
     function handleBrewerySubmit(e) {
         e.preventDefault()
@@ -104,7 +104,7 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             .then((r) => r.json())
             .then((newBrewery) => {
                 onAddBrewery(newBrewery)
-                console.log(newBrewery)})
+                history.push(`http://localhost:3001/breweries/id`)})
     }
 
 return (

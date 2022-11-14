@@ -341,6 +341,21 @@
       ],
       "website": "https://www.cmwbrewery.com/",
       "likes": 0
+    },
+    {
+      "name": "Adelbert's ",
+      "image": "https://nowandgen.com/wp-content/uploads/2019/07/AND-6386-copy-1024x684.jpg",
+      "hours": [
+        "Monday: 2pm-4pm ",
+        "Tuesday:  4pm-2am",
+        "Wednesday: 4pm-2am",
+        "Thursday: 4pm -2am ",
+        "Friday:  4pm-2am",
+        "Saturday:  4pm-2am",
+        "Sunday: 4pm-2am"
+      ],
+      "website": "https://whislersatx.com/",
+      "id": 10
     }
   ]
 }
