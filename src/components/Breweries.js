@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react"
-import {Container, Segment, Header, Grid, Image, Card, Icon, Search } from 'semantic-ui-react'
+import {Container, Divider, Segment, Header, Grid, Image, Card, Icon, Search } from 'semantic-ui-react'
 import BreweryCard from "./BreweryCard"
 
 function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, onUpdateBrewery, onUpdateBreweryLikes}) {
+    
 
     const breweriesToDisplay = breweries.filter((brewery) => {
         if(searchBrewery === "") return true;
@@ -18,9 +19,10 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, o
 
     return (
     <>
-        <Segment style={{"backgroundColor":"black"}} inverted padded="very">
-            <Header textAlign="center" as="h1">Breweries</Header>
-        </Segment>
+    <Divider/>
+    <Container text>
+            <Header block textAlign="center" as="h1">Breweries</Header>   
+    </Container>
         <Segment compact>
             <Search
             size="huge"
@@ -36,7 +38,7 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, o
                 {breweriesToDisplay.map((brewery) => (
                  <BreweryCard 
                  onDeleteBrewery={handleDeleteBrewery} 
-                brewery={brewery}
+                 brewery={brewery}
                  onUpdateBrewery={onUpdateBrewery}
                  onUpdateBreweryLikes={onUpdateBreweryLikes}/>
                 ))}

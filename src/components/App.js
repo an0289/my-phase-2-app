@@ -7,7 +7,7 @@ import SubmitForm from "./SubmitForm"
 import Home from "./Home"
 import BarDetail from "./BarDetail"
 import BreweryDetail from "./BreweryDetail"
-import { Divider, Segment } from 'semantic-ui-react'
+import { Divider, Segment, Header } from 'semantic-ui-react'
 
 
 function App() {
@@ -15,6 +15,9 @@ function App() {
     const [breweries, setBreweries] = useState([])
     const [searchBar, setSearchBar] = useState("")
     const [searchBrewery, setSearchBrewery] = useState("")
+    
+
+    
     
     
 
@@ -72,7 +75,9 @@ function App() {
 
 return (
     <div >
+        <Header dividing style={{"backgroundColor":"black"}} >
         <NavBar />
+        </Header>
         <div style={{"backgroundColor":"white"}}>
         <Switch>
             <Route exact path="/bars">

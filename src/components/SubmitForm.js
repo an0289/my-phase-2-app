@@ -5,20 +5,22 @@ import { Button, Checkbox, Form, Container, Header, Segment, Divider, Label } fr
 function SubmitForm({ onAddBar, onAddBrewery }) {
    
     const history = useHistory()
-
+    
+    
     const [formBarData, setFormBarData] = useState({
         name: "",
         image: "",
         petFriendly: false, 
         patio: false,
-        monHours: "Monday: ",
-        tuesHours: "Tuesday: ",
-        wedHours: "Wednesday: ",
-        thursHours: "Thursday: ",
-        friHours: "Friday: ",
-        satHours: "Saturday: ",
-        sunHours: "Sunday: ",
-        website: ""
+        mondayHours: "Monday: ", 
+        tuesdayHours: "Tuesday: ",
+        wednesdayHours: "Wednesday: ",
+        thursdayHours: "Thursday: ",
+        fridayHours: "Friday: ",
+        saturdayHours: "Saturday: ", 
+        sundayHours: "Sunday: ", 
+        website: "", 
+        likes: 0
     })
     
     
@@ -28,13 +30,13 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
         image: "",
         petFriendly: false, 
         patio: false,
-        monHours: "Monday: ",
-        tuesHours: "Tuesday: ",
-        wedHours: "Wednesday: ",
-        thursHours: "Thursday: ",
-        friHours: "Friday: ",
-        satHours: "Saturday: ",
-        sunHours: "Sunday: ",
+        mondayHours: "Monday: ", 
+        tuesdayHours: "Tuesday: ",
+        wednesdayHours: "Wednesday: ",
+        thursdayHours: "Thursday: ",
+        fridayHours: "Friday: ",
+        saturdayHours: "Saturday: ", 
+        sundayHours: "Sunday: ",
         website: ""
     })
 
@@ -54,7 +56,6 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
     }
 
 
-
     function handleBreweryChange(event) {
         setFormBreweryData({
             ...formBreweryData,
@@ -62,8 +63,16 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
         })
     }
 
+    function handleBreweryChangeCheckBox(event) {
+        setFormBarData({
+            ...formBreweryData, 
+            [event.target.name]: event.target.checked 
+        })
+    }
+
     function handleBarSubmit(e) {
         e.preventDefault()
+        
 
         fetch("http://localhost:3000/bars", {
             method: "POST", 
@@ -73,9 +82,17 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             body: JSON.stringify({
                 "name": formBarData.name,
                 "image": formBarData.image,
-                "hours": [formBarData.monHours, formBarData.tuesHours, formBarData.wedHours,formBarData.thursHours, formBarData.friHours, formBarData.satHours, formBarData.sunHours],
+                "mondayHours": formBarData.mondayHours,
+                "tuesdayHours": formBarData.tuesdayHours,
+                "wednesdayHours": formBarData.wednesdayHours,
+                "thursdayHours": formBarData.thursdayHours,
+                "fridayHours": formBarData.fridayHours,
+                "saturdayHours": formBarData.saturdayHours, 
+                "sundayHours": formBarData.sundayHours,
+                "petFriendly": formBarData.petFriendly, 
+                "patio": formBarData.patio, 
                 "website": formBarData.website,
-                "petFriendly": formBarData.petFriendly
+                "likes": parseInt(formBarData.likes),
             })
         })
             .then((r) => r.json())
@@ -97,8 +114,16 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             body: JSON.stringify({
                 "name": formBreweryData.name,
                 "image": formBreweryData.image,
-                "hours": [formBreweryData.monHours, formBreweryData.tuesHours, formBreweryData.wedHours,formBreweryData.thursHours, formBreweryData.friHours, formBreweryData.satHours, formBreweryData.sunHours],
-                "website": formBreweryData.website
+                "mondayHours": formBreweryData.mondayHours,
+                "tuesdayHours": formBreweryData.tuesdayHours,
+                "wednesdayHours": formBreweryData.wednesdayHours,
+                "thursdayHours": formBreweryData.thursdayHours,
+                "fridayHours": formBreweryData.fridayHours,
+                "saturdayHours": formBreweryData.saturdayHours, 
+                "sundayHours": formBreweryData.sundayHours,
+                "website": formBreweryData.website, 
+                "petFriendly": formBreweryData.petFriendly,
+                "patio": formBreweryData.patio
             })
         })
             .then((r) => r.json())
@@ -109,9 +134,11 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
 
 return (
 <>
-<Segment style={{"backgroundColor": "black"}} inverted padded="very">
-        <Header  textAlign="center" as="h1">Add A New Bar or Brewery</Header>
-</Segment>
+<Divider/>
+    <Container text>
+            <Header block textAlign="center" as="h1">Add A New Bar Or Brewery</Header>   
+    </Container>
+<Divider hidden />
 
 <Container>
     <Segment raised>
@@ -130,25 +157,32 @@ return (
                     <label>Bar Hours</label>
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBarChangeText} type="text" name="monHours" value={formBarData.monHours} placeholder='Monday Hours' />
+                    <input onChange={handleBarChangeText} type="text" name="mondayHours" value={formBarData.mondayHours} 
+                    placeholder='Monday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBarChangeText} type="text" name="tuesHours" value={formBarData.tuesHours} placeholder='Tuesday Hours' />
+                    <input onChange={handleBarChangeText} type="text" name="tuesdayHours" value={formBarData.tuesdayHours} 
+                    placeholder='Tuesday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBarChangeText} type="text" name="wedHours" value={formBarData.wedHours} placeholder='Wednesday Hours' />
+                    <input onChange={handleBarChangeText} type="text" name="wednesdayHours" value={formBarData.wednesdayHours} 
+                    placeholder='Wednesday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBarChangeText} type="text" name="thursHours" value={formBarData.thursHours} placeholder='Thursday Hours' />
+                    <input onChange={handleBarChangeText} type="text" name="thursdayHours" value={formBarData.thursdayHours} 
+                    placeholder='Thursday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBarChangeText} type="text" name="friHours" value={formBarData.friHours} placeholder='Friday Hours' />
+                    <input onChange={handleBarChangeText} type="text" name="fridayHours" value={formBarData.fridayHours} 
+                    placeholder='Friday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBarChangeText} type="text" name="satHours" value={formBarData.satHours} placeholder='Saturday Hours' />
+                    <input onChange={handleBarChangeText} type="text" name="saturdayHours" value={formBarData.saturdayHours} 
+                    placeholder='Saturday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBarChangeText} type="text" name="sunHours" value={formBarData.sunHours} placeholder='Sunday Hours' />
+                    <input onChange={handleBarChangeText} type="text" name="sundayHours" value={formBarData.sundayHours} 
+                    placeholder='Sunday Hours' />
                     </Form.Field>
                 </Form.Group>
                 <Form.Field>
@@ -156,11 +190,14 @@ return (
                 <input onChange={handleBarChangeText} type="text" name="website" value={formBarData.website}  placeholder='Bar Website' />
                 </Form.Field>
                 <Form.Field>
-                    <input type="checkbox" name="petFriendly" value="Pet Friendly"  checked={formBarData.petFriendly} onChange={handleBarChangeCheckBox} label="Pet Friendly" />
+                    <input type="checkbox" name="petFriendly" value="Pet Friendly"  checked={formBarData.petFriendly} 
+                    onChange={handleBarChangeCheckBox} label="Pet Friendly" />
                     Pet Friendly
                 </Form.Field>
                 <Form.Field>
-                    <Checkbox  label="Patio"/>
+                <input type="checkbox" name="patio" value="Outdoor Seating"  checked={formBarData.patio}
+                 onChange={handleBarChangeCheckBox} label="Pet Friendly" />
+                    Outdoor Seating
                 </Form.Field>
                 <Button color="blue" type='submit'>Submit</Button>
             </Form>
@@ -186,30 +223,38 @@ return (
                     <label>Brewery Hours</label>
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBreweryChange} type="text" name="monHours" value={formBreweryData.monHours} placeholder='Monday Hours' />
+                    <input onChange={handleBreweryChange} type="text" name="mondayHours" value={formBreweryData.mondayHours} placeholder='Monday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBreweryChange} type="text" name="tuesHours" value={formBreweryData.tuesHours} placeholder='Tuesday Hours' />
+                    <input onChange={handleBreweryChange} type="text" name="tuesdayHours" value={formBreweryData.tuesdayHours} placeholder='Tuesday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBreweryChange} type="text" name="wedHours" value={formBreweryData.wedHours} placeholder='Wednesday Hours' />
+                    <input onChange={handleBreweryChange} type="text" name="wednesdayHours" value={formBreweryData.wednesdayHours} placeholder='Wednesday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBreweryChange} type="text" name="thursHours" value={formBreweryData.thursHours} placeholder='Thursday Hours' />
+                    <input onChange={handleBreweryChange} type="text" name="thursdayHours" value={formBreweryData.thursdayHours} placeholder='Thursday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBreweryChange} type="text" name="friHours" value={formBreweryData.friHours} placeholder='Friday Hours' />
+                    <input onChange={handleBreweryChange} type="text" name="fridayHours" value={formBreweryData.fridayHours} placeholder='Friday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBreweryChange} type="text" name="satHours" value={formBreweryData.satHours} placeholder='Saturday Hours' />
+                    <input onChange={handleBreweryChange} type="text" name="saturdayHours" value={formBreweryData.saturdayHours} placeholder='Saturday Hours' />
                     </Form.Field>
                     <Form.Field>
-                    <input onChange={handleBreweryChange} type="text" name="sunHours" value={formBreweryData.sunHours} placeholder='Sunday Hours' />
+                    <input onChange={handleBreweryChange} type="text" name="sundayHours" value={formBreweryData.sundayHours} placeholder='Sunday Hours' />
                     </Form.Field>
                 </Form.Group>
                 <Form.Field>
                 <label>Brewery Website</label>
                 <input onChange={handleBreweryChange} type="text" name="website" value={formBreweryData.website} placeholder='Brewery Website' />
+                </Form.Field>
+                <Form.Field>
+                    <input type="checkbox" name="petFriendly" value="Pet Friendly"  checked={formBreweryData.petFriendly} onChange={handleBreweryChangeCheckBox}  />
+                    Pet Friendly
+                </Form.Field>
+                <Form.Field>
+                <input type="checkbox" name="patio" value="Outdoor Seating"  checked={formBreweryData.patio} onChange={handleBreweryChangeCheckBox}  />
+                    Outdoor Seating
                 </Form.Field>
                 <Button color="blue" type='submit'>Submit</Button>
             </Form>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Segment, Header, Grid, Image, Card, Button, Icon, Search } from 'semantic-ui-react'
+import {Container, Segment, Header, Grid, Image, Card, Button, Icon, Search, Divider } from 'semantic-ui-react'
 import BarCard from "./BarCard"
 
 
@@ -18,10 +18,10 @@ function handleDeleteBar(id) {
 
 return (
 <>
-   
-    <Segment  style={{"backgroundColor":"black"}} inverted padded="very">
-        <Header  textAlign="center" as="h1">Bars</Header>
-    </Segment>
+<Divider/>
+    <Container text>
+            <Header block textAlign="center" as="h1">Bars</Header>   
+    </Container>
     <Segment compact>
         <Search
            size="huge"

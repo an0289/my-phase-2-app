@@ -8,30 +8,30 @@ function NavBar() {
     return (
     <div  className="navbar">
         <Segment style={{"backgroundColor": "black"}}>
-             <Button size="huge" color="blue" as={ Link } 
-                to="/"
-                exact
-            >
-                Home
-            </Button> 
-            <Button size="huge" color='blue' as={ Link } 
-                to="/bars"
-                exact
-            >
-                Bars
-            </Button>
-            <Button size="huge" color='blue' as={ Link }  
-                to="/breweries"
-                exact
-            >
-                Breweries
-            </Button>
-            <Button size="huge" color='blue' as={ Link }  
-                to="/submitform"
-                exact
-            >
-                Add New
-            </Button>
+                <Button size="huge" color="teal" as={ Link } 
+                    to="/"
+                    exact
+                >
+                    Home
+                </Button> 
+                <Button size="huge" color='teal' as={ Link } 
+                    to="/bars"
+                    exact
+                >
+                    Bars
+                </Button>
+                <Button size="huge" color='teal' as={ Link }  
+                    to="/breweries"
+                    exact
+                >
+                    Breweries
+                </Button>
+                <Button size="huge" color='teal' as={ Link }  
+                    to="/submitform"
+                    exact
+                >
+                    Add New
+                </Button>
         </Segment>
     </div>
     )
