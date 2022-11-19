@@ -41,6 +41,16 @@ function App() {
     setBreweries([...breweries, newBrewery])
    }
 
+   function updateBarHours(updatedBar){
+    const updatedBars = bars.map((bar) => {
+        if(bar.id === updatedBar.id) {
+            return updatedBar
+        }
+        return bar
+    })
+    setBars(updatedBars)
+    }
+
    function updateBarLikes(updatedBar){
     const updatedBars = bars.map((bar) => {
         if(bar.id === updatedBar.id) {
@@ -51,7 +61,7 @@ function App() {
     setBars(updatedBars)
     }
 
-    function updateBrewery(updatedBrewery) {
+    function updateBreweryCard(updatedBrewery) {
      const updatedBreweries = breweries.map((brewery) => {
         if(brewery.id === updatedBrewery.id) {
             return updatedBrewery
@@ -81,14 +91,16 @@ return (
         <div style={{"backgroundColor":"white"}}>
         <Switch>
             <Route exact path="/bars">
-                <Bars  onUpdateBarLikes={updateBarLikes} searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
+                <Bars  onUpdateBarLikes={updateBarLikes} 
+                onUpdateBarHours={updateBarHours}
+                searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/bars/:id">
                 <BarDetail />
             </Route>
             <Route exact path="/breweries">
                 <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}
-                onUpdateBrewery={updateBrewery}
+                onUpdateBreweryCard={updateBreweryCard}
                 onUpdateBreweryLikes={updateBreweryLikes}/>
             </Route>
             <Route exact path="/breweries/:id">

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import {Container, Divider, Segment, Header, Grid, Image, Card, Icon, Search } from 'semantic-ui-react'
 import BreweryCard from "./BreweryCard"
 
-function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, onUpdateBrewery, onUpdateBreweryLikes}) {
+function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, onUpdateBreweryCard, onUpdateBreweryLikes}) {
     
 
     const breweriesToDisplay = breweries.filter((brewery) => {
@@ -39,7 +39,7 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, o
                  <BreweryCard 
                  onDeleteBrewery={handleDeleteBrewery} 
                  brewery={brewery}
-                 onUpdateBrewery={onUpdateBrewery}
+                 onUpdateBreweryCard={onUpdateBreweryCard}
                  onUpdateBreweryLikes={onUpdateBreweryLikes}/>
                 ))}
             </Grid.Row>

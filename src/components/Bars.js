@@ -3,7 +3,7 @@ import {Container, Segment, Header, Grid, Image, Card, Button, Icon, Search, Div
 import BarCard from "./BarCard"
 
 
-function Bars({ bars, setBars, searchBar, setSearchBar, onUpdateBarLikes }) {
+function Bars({ bars, setBars, searchBar, setSearchBar, onUpdateBarHours, onUpdateBarLikes }) {
 
 const barsToDisplay = bars.filter((bar) => {
     if(searchBar === "") return true;
@@ -36,7 +36,7 @@ return (
         <Grid.Row  >
             {barsToDisplay.map((bar) => (
              <BarCard 
-             onDeleteBar={handleDeleteBar} onUpdateBarLikes={onUpdateBarLikes}
+             onDeleteBar={handleDeleteBar} onUpdateBarLikes={onUpdateBarLikes} onUpdateBarHours={onUpdateBarHours}
              bar={bar} />
             ))}
         </Grid.Row>
