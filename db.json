@@ -164,7 +164,7 @@
   "breweries": [
     {
       "id": 1,
-      "name": "Batch",
+      "name": "Batch ",
       "image": "http://img-aws.ehowcdn.com/1280x/www.onlyinyourstate.com/wp-content/uploads/2018/01/17361872_423581411316231_5240188629637383368_n-e1516971416548.jpg",
       "petFriendly": true,
       "patio": true,
