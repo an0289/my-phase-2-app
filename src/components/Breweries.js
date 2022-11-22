@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react"
 import {Container, Divider, Segment, Header, Grid, Image, Card, Icon, Search } from 'semantic-ui-react'
 import BreweryCard from "./BreweryCard"
+import Beer from "../assets/beer-glass1.jpg"
 
 function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, onUpdateBreweryCard, onUpdateBreweryLikes}) {
     
@@ -18,20 +19,22 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, o
    
 
     return (
-    <>
-    <Divider/>
-    <Container text>
-            <Header block textAlign="center" as="h1">Breweries</Header>   
-    </Container>
-        <Segment compact>
-            <Search
-            size="huge"
-            type="text" 
-            placeholder="Search..."
-            value={searchBrewery}
-            onSearchChange={(e) => setSearchBrewery(e.target.value)}
-            />
-    </Segment>
+    <div style={{ backgroundColor:"white"}}>
+    <Divider hidden/>
+    <Header style={{ fontFamily:"Lucida Handwriting"}} as='h1' icon textAlign='center'>
+      <Image circular src={Beer} />
+    Breweries
+</Header>
+<Container style={{ paddingLeft:460}}>
+    <Search
+           size="large"
+           type="text" 
+           placeholder="Search..."
+           value={searchBrewery}
+           onSearchChange={(e) => setSearchBrewery(e.target.value)}
+        />
+</Container>
+<Divider hidden />
         <Container>
         <Grid columns={3} divided>
             <Grid.Row stretched>
@@ -45,7 +48,7 @@ function Breweries({ breweries, setBreweries, searchBrewery, setSearchBrewery, o
             </Grid.Row>
         </Grid>
         </Container>
-    </>
+    </div>
     )
     }
 

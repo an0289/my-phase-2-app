@@ -5,9 +5,8 @@ import Breweries from "./Breweries"
 import NavBar from "./NavBar"
 import SubmitForm from "./SubmitForm"
 import Home from "./Home"
-import BarDetail from "./BarDetail"
-import BreweryDetail from "./BreweryDetail"
 import { Divider, Segment, Header } from 'semantic-ui-react'
+
 
 
 function App() {
@@ -84,27 +83,22 @@ function App() {
 
 
 return (
-    <div >
-        <Header dividing style={{"backgroundColor":"black"}} >
+    <div style={{ backgroundColor: "black"}} >
+        <Header  style={{backgroundColor:"black"}} >
         <NavBar />
         </Header>
-        <div style={{"backgroundColor":"white"}}>
+        <div >
         <Switch>
             <Route exact path="/bars">
-                <Bars  onUpdateBarLikes={updateBarLikes} 
+                <Bars  
+                onUpdateBarLikes={updateBarLikes} 
                 onUpdateBarHours={updateBarHours}
                 searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
-            </Route>
-            <Route exact path="/bars/:id">
-                <BarDetail />
             </Route>
             <Route exact path="/breweries">
                 <Breweries searchBrewery={searchBrewery} setSearchBrewery={setSearchBrewery} breweries={breweries} setBreweries={setBreweries}
                 onUpdateBreweryCard={updateBreweryCard}
                 onUpdateBreweryLikes={updateBreweryLikes}/>
-            </Route>
-            <Route exact path="/breweries/:id">
-                <BreweryDetail />
             </Route>
             <Route exact path="/submitform">
                 <SubmitForm onAddBar={handleAddBar} onAddBrewery={handleAddBrewery} />

@@ -98,7 +98,7 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             .then((r) => r.json())
             .then((newBar) => {
                 onAddBar(newBar)
-                history.push("http://localhost:3001/bars/id")})
+                history.push("http://localhost:3001/bars")})
     }
 
     
@@ -129,14 +129,14 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             .then((r) => r.json())
             .then((newBrewery) => {
                 onAddBrewery(newBrewery)
-                history.push(`http://localhost:3001/breweries/id`)})
+                history.push(`http://localhost:3001/breweries`)})
     }
 
 return (
-<>
-<Divider/>
+<div style={{ backgroundColor:"white"}}>
+<Divider hidden/>
     <Container text>
-            <Header block textAlign="center" as="h1">Add A New Bar Or Brewery</Header>   
+            <Header  textAlign="center" as="h1">Add A New Bar Or Brewery</Header>   
     </Container>
 <Divider hidden />
 
@@ -262,7 +262,7 @@ return (
 </Container>
 
 <Divider hidden />
-</>
+</div>
 
 )
 }

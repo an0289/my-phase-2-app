@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, Segment, Header, Grid, Image, Card, Button, Icon, Search, Divider } from 'semantic-ui-react'
 import BarCard from "./BarCard"
+import Martini from "../assets/martini-glass1.jpg"
 
 
 function Bars({ bars, setBars, searchBar, setSearchBar, onUpdateBarHours, onUpdateBarLikes }) {
@@ -17,20 +18,22 @@ function handleDeleteBar(id) {
 
 
 return (
-<>
-<Divider/>
-    <Container text>
-            <Header block textAlign="center" as="h1">Bars</Header>   
-    </Container>
-    <Segment compact>
-        <Search
-           size="huge"
+<div style={{ backgroundColor:"white"}}>
+<Divider hidden/>
+<Header style={{ fontFamily:"Lucida Handwriting"}} as='h1' icon textAlign='center'>
+      <Image circular src={Martini} />
+    Bars
+</Header>
+<Container style={{ paddingLeft:460}}>
+    <Search
+           size="large"
            type="text" 
            placeholder="Search..."
            value={searchBar}
            onSearchChange={(e) => setSearchBar(e.target.value)}
         />
-    </Segment>
+</Container>
+<Divider hidden />
     <Container >
     <Grid center columns={3} divided>
         <Grid.Row  >
@@ -42,7 +45,7 @@ return (
         </Grid.Row>
     </Grid>
     </Container>
-</>
+</div>
 )
 }
 
