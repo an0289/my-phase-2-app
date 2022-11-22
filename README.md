@@ -25,7 +25,7 @@ Do you particularly like one of the bars/breweries that are featured? Go ahead a
 Don't see one of your favorite bars/breweries included? Go ahead and add it! 
 ![Add New](/add-new.png)
 
-Oops! Did you make a mistake, or maybe the hours of operation have changed? No worries! Click the edit button and make the needed changes.
+Oops! Did you make a mistake, or maybe the hours of operation have changed? No worries! Click the edit button and make the needed changes.  
 ![Edit Button](/edit-button.png)
 ![Edit Form](/edit-form.png)
 
