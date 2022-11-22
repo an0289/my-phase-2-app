@@ -64,7 +64,7 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
     }
 
     function handleBreweryChangeCheckBox(event) {
-        setFormBarData({
+        setFormBreweryData({
             ...formBreweryData, 
             [event.target.name]: event.target.checked 
         })
@@ -98,7 +98,7 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             .then((r) => r.json())
             .then((newBar) => {
                 onAddBar(newBar)
-                history.push("http://localhost:3001/bars")})
+                history.push("/bars")})
     }
 
     
@@ -129,7 +129,7 @@ function SubmitForm({ onAddBar, onAddBrewery }) {
             .then((r) => r.json())
             .then((newBrewery) => {
                 onAddBrewery(newBrewery)
-                history.push(`http://localhost:3001/breweries`)})
+                history.push(`/breweries`)})
     }
 
 return (

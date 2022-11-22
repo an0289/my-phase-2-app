@@ -143,22 +143,6 @@
       "sundayHours": "Sunday: 11am-12am",
       "website": "https://ahsingden.com/",
       "likes": 0
-    },
-    {
-      "name": "Whisler's",
-      "image": "https://nowandgen.com/wp-content/uploads/2019/07/AND-6386-copy-1024x684.jpg",
-      "mondayHours": "Monday: 12pm-2am",
-      "tuesdayHours": "Tuesday: 2pm-12am",
-      "wednesdayHours": "Wednesday:  4pm-2am",
-      "thursdayHours": "Thursday:  4pm-2am",
-      "fridayHours": "Friday: 4pm-2am ",
-      "saturdayHours": "Saturday: 4pm-2am ",
-      "sundayHours": "Sunday: 4pm-2am ",
-      "petFriendly": true,
-      "patio": true,
-      "website": "https://whislersatx.com/",
-      "likes": 0,
-      "id": 10
     }
   ],
   "breweries": [
