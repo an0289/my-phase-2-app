@@ -17,19 +17,25 @@ Users can view popular bars and breweries as cute card designs containing all th
 2. An "outdoor seating" label is present if locations have patios
 3. Hours of operation are neatly listed out 
 4. The "website" button contains a link to the location's official website   
+
 ![Hank's Bar Card](/Hanks-bar-card.png)    
 
 Do you particularly like one of the bars/breweries that are featured? Go ahead and hit that like button!   
+
 ![Like Button](/likes.gif)
 
 Don't see one of your favorite bars/breweries included? Go ahead and add it! 
+
 ![Add New](/add-new.png)
 
 Oops! Did you make a mistake, or maybe the hours of operation have changed? No worries! Click the edit button and make the needed changes.  
+
 ![Edit Button](/edit-button.png)
+
 ![Edit Form](/edit-form.png)
 
 Too many mistakes and you just want to trash it and start over? Click the trash icon and it's gone! 
+
 ![Delete Button](/delete-button.png)
 
  
