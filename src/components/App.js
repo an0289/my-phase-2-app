@@ -40,7 +40,7 @@ function App() {
     setBreweries([...breweries, newBrewery])
    }
 
-   function updateBarHours(updatedBar){
+   function updateBarCard(updatedBar){
     const updatedBars = bars.map((bar) => {
         if(bar.id === updatedBar.id) {
             return updatedBar
@@ -92,7 +92,7 @@ return (
             <Route exact path="/bars">
                 <Bars  
                 onUpdateBarLikes={updateBarLikes} 
-                onUpdateBarHours={updateBarHours}
+                onUpdateBarCard={updateBarCard}
                 searchBar={searchBar} setSearchBar={setSearchBar} bars={bars} setBars={setBars}/>   
             </Route>
             <Route exact path="/breweries">

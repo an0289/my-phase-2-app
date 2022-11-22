@@ -4,7 +4,7 @@ import BarCard from "./BarCard"
 import Martini from "../assets/martini-glass1.jpg"
 
 
-function Bars({ bars, setBars, searchBar, setSearchBar, onUpdateBarHours, onUpdateBarLikes }) {
+function Bars({ bars, setBars, searchBar, setSearchBar, onUpdateBarCard, onUpdateBarLikes }) {
 
 const barsToDisplay = bars.filter((bar) => {
     if(searchBar === "") return true;
@@ -39,7 +39,7 @@ return (
         <Grid.Row  >
             {barsToDisplay.map((bar) => (
              <BarCard 
-             onDeleteBar={handleDeleteBar} onUpdateBarLikes={onUpdateBarLikes} onUpdateBarHours={onUpdateBarHours}
+             onDeleteBar={handleDeleteBar} onUpdateBarLikes={onUpdateBarLikes} onUpdateBarCard={onUpdateBarCard}
              bar={bar} />
             ))}
         </Grid.Row>

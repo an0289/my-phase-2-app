@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# My Phase 2 Project 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome! Take a shallow dive into Austin's *most* popular bars and breweries!  
 
-## Available Scripts
+![Welcome](src/assets/home-page.png)
 
-In the project directory, you can run:
+**Disclaimer**: the current list is not all-inclusive...but you all can help by adding your favorite Austin drinking spots
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React js and Semantic UI are responsible for the design of this app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+Users can view popular bars and breweries as cute card designs containing all the pertinent information:  
+1. Cards have a corner paw-print tag if they are pet-friendly
+2. An "outdoor seating" label is present if locations have patios
+3. Hours of operation are neatly listed out 
+4. The "website" button contains a link to the location's official website   
+![Hank's Bar Card](src/assets/Hanks-bar-card.png)    
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Do you particularly like one of the bars/breweries that are featured? Go ahead and hit that like button!   
+![Like Button](src/assets/likes.gif)
 
-### `npm run build`
+Don't see one of your favorite bars/breweries included? Go ahead and add it! 
+![Add New](src/assets/add-new.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Oops! Did you make a mistake, or maybe the hours of operation have changed? No worries! Click the edit button and make the needed changes.
+![Edit Button](src/assets/edit-button.png)
+![Edit Form](src/assets/edit-form.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Too many mistakes and you just want to trash it and start over? Click the trash icon and it's gone! 
+![Delete Button](src/assets/delete-button.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 
+## Contributing
 
-### `npm run eject`
+Thanks to [Semantic UI](https://react.semantic-ui.com/) for the easy design styles  
+Thanks to [Megan Bucknall](https://unsplash.com/@meganmarkham?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/) for the home page photo  
+Thanks to [Lorenzo Rui](https://unsplash.com/@lorenzorui?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/) for the beer glass photo  
+Thanks to [Hush Naidoo Jade Photography](https://unsplash.com/@hush52?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/) for the martini glass photo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://choosealicense.com/licenses/mit/)

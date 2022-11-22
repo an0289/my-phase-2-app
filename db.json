@@ -62,7 +62,7 @@
       "saturdayHours": "Saturday: 11am-12am",
       "sundayHours": "Sunday: 11am-12am",
       "website": "https://www.hanksaustin.com/",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 5,
@@ -147,7 +147,7 @@
     {
       "name": "Whisler's",
       "image": "https://nowandgen.com/wp-content/uploads/2019/07/AND-6386-copy-1024x684.jpg",
-      "mondayHours": "Monday:  4pm-2am",
+      "mondayHours": "Monday: 12pm-2am",
       "tuesdayHours": "Tuesday: 2pm-12am",
       "wednesdayHours": "Wednesday:  4pm-2am",
       "thursdayHours": "Thursday:  4pm-2am",
@@ -272,7 +272,7 @@
       "saturdayHours": "Saturday: 11am-12am",
       "sundayHours": "Sunday: 11am-12am",
       "website": "https://www.lazarusbrewing.com/",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 8,
